@@ -1,78 +1,204 @@
-<!--
-Requirements
-[  ] Two Different Headlines
-[  ] Bold and Italic Text
-[  ] One List
-[  ] Three Images
-
-Select ONE Additional Feature to Add  
-[ no ] Feature 1 - Include at least three emojis
-[ no ] Feature 2 - Include <font> tag
-[ no ] Feature 3 - Include Underline & Highlight
-[ no ] Feature 4 - Use Square Bullets
-[ no ] Feature 5 - Include a list within a list
--->
-    
-<!DOCTYPE HTML>
+<!DOCTYPE html>
 <html>
-    <head>
-        <meta charset="utf-8">
-        <title>Unit 1 Project</title>     
-    </head>
-    <body> 
-      
-<h1>
-  💚Keith-Allen Hinds💚
-      </h1>
-        
-      <h2>
-        About Me 
-      </h2>
-      
-      <p>
-        Keith-Allen is a talented and dynamic performer with a passion for various types of dance such as Contemporary, Jazz, Ballet, Modern, Vogue, Tap, Hip-Hop and more. He is especially passionate about choreographing and being a choreographer. With five years of experience, he has captivated audiences with the fluidity, dynamics, and emotion he brings to both his dancing and choreography.
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-<br>
-<br>
-Keith is currently training at Fiorello H. LaGuardia High School and is in his 2nd year as a Young Professional at <strong>MOVE|NYC|</strong>.  He has also trained at Alvin Ailey, Ballet Hispánico, and more recently The Juilliard School. He has trained with notable teachers such 
-      <ul><li>Shay Bland</li> <li>Greg Lau</li> <li>Genessy Castillo</li> <li>Milton Myers</li> <li>Risa Steinberg</li> <li>Terese Capucilli</li> <li>Adrienne Hurd,</li> <li>Rodney Hamilton,</li> <li>Branndi Lewis,</li> <li>Fredrick Earl Mosley</li> <li> and many more.</li></ul> both refining his craft and expanding his artistic range. He has performed at St. George Theatre, Connelly Theater, and most notably, <strong><mark> New York City Center for Dance Against Cancer</mark></strong>, earning acclaim for his versatility, emotional depth, and stage presence.
-<br>
-  <br>      
-Dedicated to continuous growth, Keith-Allen embraces every opportunity to inspire and connect with audiences. He also has a musical theater background, and has performed in the show <em>Legally Blonde the Musical</em> and <em>Chicago the musical</em> with Kidztheater. Outside of performing, he enjoys strength training, attending performances, and choreographing, all of which bring a rich and diverse perspective to his work.
+    <link href="style.css" rel="stylesheet" type="text/css" />
+    <style>
+       html {
+        height: 100%;
+      }
+      .parallax {
+        /* The image used */
+        background-image: url("https://cdn.glitch.global/d03d2377-54bd-4c0f-afd1-81effb05b730/IMG_0341.jpeg?v=1747358496043");
 
-      </p>
-      <h2>
-        My Dancing 
-  </h2>   
- 
-  <iframe width="560" height="315" src="https://www.youtube.com/embed/RFGng8vaImI?si=-cBuWd7Qh56gfRvI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-  
-<iframe width="560" height="315" src="https://www.youtube.com/embed/tEzVJ6rP7Uk?si=yv6mm3RsFFeb9lw5" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-    
-  <h2>Photos of Me💖 </h2>
-  
-  
-  
-<img src="https://cdn.glitch.global/462f1d07-d53c-452f-aea9-fda3938ecf2a/IMG_20240726_162250_499.jpg?v=1727292419153" width=400>
-  <img src="https://cdn.glitch.global/3a8e3494-4251-4786-8b3e-7622212d2fff/IMG_20240728_185840_026.webp?v=1727293104976" width=400>
-<img src="https://cdn.glitch.global/462f1d07-d53c-452f-aea9-fda3938ecf2a/Screenshot_20240304-211130~2.png?v=1727292406028" width=400>
-  
-  
-  
-  <h2>
-    Contact
-  </h2>
-  <h4>
-    EMAIL: Keithhinds2008@gmail.com
-    <br>
-    SOCIAL: keith_hinds_43889
-    
-  </h4>
-  
-  
-  
-  
-  
-  
+        /* Full height */
+        height: 110%;
+        width: 100%;
+
+        /* Create the parallax scrolling effect */
+        /*   background-attachment: fixed; */
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+      }
+
+      .head {
+        list-style-type: none;
+        margin: 0;
+        margin-bottom: -150px;
+        padding: 0;
+        overflow: hidden;
+        background-color: transparent;
+      }
+
+      img {
+        border: 30px;
+        border-radius: 8px;
+      }
+
+      body {
+        background-image: url("https://cdn.glitch.global/d03d2377-54bd-4c0f-afd1-81effb05b730/keith.jpeg?v=1747360300536");
+        height: 120%;
+        width: 100%;
+        background-repeat: no-repeat;
+        background-size: cover;
+      }
+
+      .head li a {
+        display: block;
+        color: white;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+      }
+
+      .head li {
+        display: block;
+        color: white;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+        float: left;
+      }
+
+      li :hover {
+        background-color: black;
+      }
+
+      #res {
+        color: #beb9b3;
+      }
+
+      .bio {
+        color: white;
+      }
+
+      .heading {
+        color: white !important;
+      }
+
+      #dance {
+        color: white;
+      }
+      #email {
+        color: white;
+      }
+
+      a:hover {
+        background-color: none;
+        color: grey;
+      }
+
+      h3 {
+        color: #beb9b3;
+      }
+
+      #chanel {
+        background-color: none;
+        text-align: right;
+        margin-right: 0%;
+      }
+
+      a {
+        font-size: 18px;
+        margin: 8px;
+      }
+
+      #move {
+        background-color: none;
+        text-align: left;
+      }
+
+      #top {
+        display: flex;
+        justify-content: space-between;
+      }
+
+      #picquo {
+        display: flex;
+        justify-content: space-between;
+      }
+
+      #size {
+        font-size: 40px;
+      }
+
+      .side {
+        display: flex;
+        justify-content: space-around;
+      }
+
+      .ins {
+        font-size: 25px;
+      }
+
+      h1 {
+        font-family: "Gideon Roman", serif;
+        font-weight: 400;
+        font-size: 45px;
+      }
+
+      .side2 {
+        width: 50%;
+      } 
+       
+      
+    </style>
+  </head>
+  <body>
+     <ul class="head">
+    <li style="float: left"><h1 >Keith-Allen Hinds</h1></li>
+      <li style="float: right">
+        <a
+          target="_blank"
+          href="https://www.instagram.com/keith_hinds_43889/profilecard/?igsh=MWI1NXVzNTJkanV0Nw="
+        >
+          <img
+            class="ani"
+            src="https://cdn.glitch.global/d03d2377-54bd-4c0f-afd1-81effb05b730/0973c889-3580-4033-b9bd-abfe9b7da1aa.image.png?v=1735836652443"
+            width="25"
+          />
+        </a>
+      </li>
+      <li style="float: right">
+        <a
+          target="_blank"
+          href="https://youtube.com/@keithhinds1913?si=Icno7YENb0QFQpVW"
+        >
+          <img
+            class="ani"
+            src="https://cdn.glitch.global/d03d2377-54bd-4c0f-afd1-81effb05b730/5f8df92e-76ec-4956-8f12-629f7679a2b8.image.png?v=1735836749140"
+            width="25"
+          />
+        </a>
+      </li>
+      <li style="float: right">
+        <a
+          target="_blank"
+          href="https://cdn.glitch.global/d03d2377-54bd-4c0f-afd1-81effb05b730/5f8df92e-76ec-4956-8f12-629f7679a2b8.image.png?v=1735836749140
+"
+        >
+          <img
+            class="ani"
+            src="https://cdn.glitch.global/d03d2377-54bd-4c0f-afd1-81effb05b730/3d55feb6-d640-471d-8f83-dae1be1f2a0a.image.png?v=1735836786387"
+            width="25"
+          />
+        </a>
+      </li>
+
+      <li  style="float: right"><a href="contact.html">Contact</a></li>
+
+      <li  style="float: right" ><a href="choreo.html">Choreography</a></li>
+      <li  style="float: right"><a href="media.html">Media</a></li>
+      <li  style="float: right">
+        <a href="https://docs.google.com/document/d/16MYVdqUXM6GKA33pXF27tlnYMOmTKmIBZMfzlYQnHtw/edit?usp=sharing"
+          >Resume</a>
+      </li>
+      <li  style="float: right"><a href="aboutme.html" class="ani">About</a></li>
+      <li  style="float: right"><a href="index.html">Home</a></li>
+
+
+    </ul>
   </body>
 </html>
